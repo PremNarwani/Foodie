@@ -1,0 +1,203 @@
+* {  
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height:0px;
+}
+body{
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky ;
+    top:0px;
+}
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 62px;
+    width: 65px;
+    
+    margin: 0px 0px ;
+}
+#navbar ul{
+    display: flex;
+}  
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left:0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem ;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 239px;
+}
+#home::before{
+    content: "";
+    background:url(image1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 335px; 
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left:0px;
+}
+/* services section*/
+  #services{
+    margin: 34px;
+    display:flex;
+  }
+   #services .box{
+    border: 2px solid brown;
+    margin: 0px 5px;
+    padding: 35px;
+    border-radius: 26px;
+    background-color:#eff1f3;
+  }
+  #services .box img{
+    height: 180px;
+    display: block;
+    width:138px;
+    padding: 10px 40px;
+    margin: auto;
+  }
+
+section >p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin : 15px;
+    background-color: brown;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Clients-section */
+#client-section{
+    height: 300px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url(../bg.jpg);
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#client img{
+    height: 100px;
+}
+
+/* Contact section */
+#contact{
+ position: relative;
+}
+#contact::before{
+ content: "";
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.4;
+ background: url('../contact.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin:3px 6px;
+}
+footer{
+    background: black;
+    color:white;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 2.9rem;
+    padding-top:30px;
+    padding-bottom: 5px;
+    color: black;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.3rem ;
+    padding: 12px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
